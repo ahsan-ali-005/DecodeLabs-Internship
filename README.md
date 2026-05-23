@@ -26,6 +26,10 @@ A simple command-line **To-Do List** application that helps users manage their d
 - ✏️ Update/rename existing tasks
 - 🔁 Continuous menu loop until user exits
 
+<img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/9515ac3c-0cb7-41bb-a3ca-08337700b153" />
+
+
+
 ### File
 `todo_list.py`
 
@@ -43,6 +47,9 @@ A command-line **Expense Tracker** that lets users record, view, update, and del
 - 💰 Calculate total expenses
 - ⚠️ Input validation with error handling
 
+<img width="1918" height="1123" alt="image" src="https://github.com/user-attachments/assets/de3bf9f6-de80-4910-9747-c44aec91f705" />
+
+
 ### File
 `expense_tracker.py`
 
@@ -56,6 +63,9 @@ A lightweight **Password Generator** that creates strong, random passwords of a 
 - 🔐 Generates passwords using letters, digits, and special characters
 - 📏 Accepts custom length between 8 and 64 characters
 - ✅ Input validation for non-numeric and out-of-range entries
+
+<img width="1919" height="798" alt="image" src="https://github.com/user-attachments/assets/faca2e0d-47f7-47ed-ae0a-0e0aecaa2351" />
+
 
 ### File
 `password_generator.py`
