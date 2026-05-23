@@ -1,0 +1,116 @@
+# Expense Tracker App
+
+def show_categories(categories):
+    for key,value in categories.items():
+        print(f"{key}. {value}")  
+
+
+def add_expenses(expenses,categories):
+    show_categories(categories)
+    category=input("Enter category choice(0-3): ")
+    if category not in categories:
+        print("Invalid Category! Please enter between 0-3.\n")
+        return
+    try:
+        amount=int(input(f"Enter Amount to add in {categories[category]} expenses:"))
+    except ValueError as e:
+        print(e)
+        return
+    expenses.update({categories[category] : amount})
+    print("Expense Added Successfully!\n")
+
+
+def view_expenses(expenses):
+    if not expenses:
+        print("No Expenses Right Now!")
+    else:
+        print("\nYour Current Expenses are: ")
+        for category, amount in expenses.items():
+            print(f"{category} : {amount}")
+        print('')
+
+
+def del_expenses(expenses,categories):
+    show_categories(categories)
+    category=input("Enter category choice(0-3) to delete: ")
+    if category not in categories:
+        print("Invalid Category! Please enter between 0-3.\n")
+        return
+    else:
+        if categories[category] not in expenses:
+            print(f"No Expenses Spent on {categories[category]}")
+            return
+        else:
+            expenses.pop(categories[category])
+            print("Deleted Successfully!\n")
+
+def update_expenses(expenses,categories):
+    show_categories(categories)
+    category=input("Enter category choice(0-3) to update: ")
+    if category not in categories:
+        print("Invalid Category! Please enter between 0-3.\n")
+        return
+    else:
+        try:
+            amount=int(input("Enter amount to update: "))
+        except ValueError as e:
+            print(e)
+            return
+        if categories[category] not in expenses:
+            print(f"No Expenses Spent on {categories[category]}")
+            return
+        else:
+            expenses.update({categories[category]: amount})
+            print("Expense Updated Successfully!\n")
+
+def total_expenses(expenses):
+    if not expenses:
+        print("No Expense Added Right Now\n")
+        return
+    total_amount=0
+    for category, amount in expenses.items():
+        total_amount+=amount
+
+    print(f"Total Amount Spent on Expenses is : {total_amount}\n")
+    
+
+categories= {
+        
+    "0":"Food",
+    "1":"Travel",
+    "2":"Shopping",
+    "3":"Bills"
+}
+expenses={}
+print("====== Expense Tracker ======")
+while True:
+    print("1. Add Expenses")
+    print("2. View Expenses")
+    print("3. Delete Expenses")
+    print("4. Update Expenses")
+    print("5. Calculate Total Expenses")
+    print("6. Exit")
+
+    choice=input("Enter Your choice(1-6): ")
+
+    if choice=="1":
+        add_expenses(expenses,categories)
+
+    elif choice=="2":
+        view_expenses(expenses)
+
+    elif choice=="3":
+        del_expenses(expenses,categories)
+
+    elif choice=="4":
+        update_expenses(expenses,categories)
+    
+    elif choice=="5":
+        total_expenses(expenses)
+
+    elif choice=="6":
+        print("Good Bye 🙌!")
+        break
+
+    else:
+        print("Please Enter Valid Input! Try Again!")
