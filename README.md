@@ -26,7 +26,7 @@ A simple command-line **To-Do List** application that helps users manage their d
 - ✏️ Update/rename existing tasks
 - 🔁 Continuous menu loop until user exits
 
-<img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/9515ac3c-0cb7-41bb-a3ca-08337700b153" />
+<img width="1918" height="1123" alt="image" src="https://github.com/user-attachments/assets/de3bf9f6-de80-4910-9747-c44aec91f705" />
 
 
 
@@ -47,7 +47,7 @@ A command-line **Expense Tracker** that lets users record, view, update, and del
 - 💰 Calculate total expenses
 - ⚠️ Input validation with error handling
 
-<img width="1918" height="1123" alt="image" src="https://github.com/user-attachments/assets/de3bf9f6-de80-4910-9747-c44aec91f705" />
+<img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/9515ac3c-0cb7-41bb-a3ca-08337700b153" />
 
 
 ### File
